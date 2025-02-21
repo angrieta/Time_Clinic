@@ -1,0 +1,109 @@
+header{
+    max-width: 100%; width: 1920px;
+    height: 110px;
+    align-content: center;
+    position: fixed;
+    z-index: 1000;
+}
+header .header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+header .header_inner h1{}
+header .header_inner h1 a{}
+header .header_inner h1 a img{}
+header .header_inner .center_menu{}
+header .header_inner .center_menu a:hover{
+    border-bottom: 1px solid #333 ;
+}
+header .header_inner .center_menu a{
+    font-weight: 500;
+    margin-right: 34px;
+    color: #333;
+}
+header .header_inner .center_menu a:last-child{
+    margin: 0px;
+}
+header .header_inner .right_btn{
+    color: #333;
+    font-weight: 600;
+    padding: 13px 20px;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+header .header_inner .right_btn:hover{
+    animation: reserve_btn 0.5s forwards;
+}
+@keyframes reserve_btn {
+    0% {background-color:none; color: #333;}
+    100% {background-color: #333; color: #fff;}
+}
+
+footer{
+    background-color: #333;
+    max-width: 100%;
+    width: 1920px;
+    height: 180px;
+}
+footer .inner_footer{
+    border-bottom: 1px solid #fff;
+}
+footer .inner_footer .top_menu{
+    padding: 15px 120px;
+}
+footer .inner_footer a:hover{
+    border-bottom: 1px solid #fff;
+}
+footer .inner_footer a{
+    font-size: 0.875rem; color: #fff; margin-right: 38px;
+}
+.btm_contents{
+    display: flex; justify-content: space-between;
+    padding: 15px 120px; color: #fff;
+}
+.btm_contents .left_container{}
+.btm_contents .left_container h3{
+    margin-bottom: 7px;  font-size: 0.8125rem;
+}
+.btm_contents .left_container address{
+    line-height: 1.7; font-size: 0.8125rem;
+}
+.btm_contents .left_container address span{
+    font-size: 0.6875rem; font-weight: 500;
+}
+.btm_contents .right_container {
+    display: flex; align-items: end;
+}
+.btm_contents .right_container a{
+    margin-left: 15px;
+}
+.btm_contents .right_container a:hover{
+    animation: quickItemScale 0.5s forwards;
+}
+
+.quick_guide{
+    position: absolute; right: 50px; bottom: 38%; z-index: 500;
+    display: flex; flex-flow: column nowrap;
+}
+.guide_btn{
+    display: flex;
+    align-items: center;
+    position: relative; padding: 10px 0;
+}
+.guide_btn p{
+    font-size:0.75rem; font-weight: 400; color: #222;
+    white-space: nowrap; width: 100px;
+    opacity: 0;
+    text-align: right; margin-right: 10px;
+}
+.guide_btn a{
+    display: block; width: 15px; height: 15px; border-radius: 50%; border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    content: '';
+}
+.guide_btn a:hover{
+    animation: quick_guide_btn 0.5s forwards;
+}
+.guide_btn .active{}

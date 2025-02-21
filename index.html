@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부평피부과 | 타임클리닉</title>
+    <!-- scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./images/common/rogo.jpg" type="image/x-icon">
+    <link rel="icon" href="./images/common/rogo.png" type="image/x-icon">
+    <script src="./scripts/swiper.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/scroll_trigger.js" defer></script>
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header>
+        <div class="header_inner">
+            <h1><a href="#"><img src="./images/index/logo.png" alt="메인페이지로 가기"></a></h1>
+            <div class="center_menu">
+                <a href="#">병원소개</a>
+                <a href="#">피부</a>
+                <a href="#">리프팅</a>
+                <a href="#">스킨부스터</a>
+                <a href="#">제모</a>
+                <a href="#">체형</a>
+                <a href="#">이벤트</a>
+            </div>
+            <a href="#" class="right_btn">상담/예약하기</a>
+        </div>
+    </header>
+    <!-- 헤더 종료 -->
+    <!-- 메인 시작 -->
+    <main>
+        <nav>
+            <div class="quick_guide">
+                <div class="guide1 guide_btn"><p>MAIN</p><a href="#" class="active"></a></div>
+                <div class="guide2 guide_btn"><p>CATEGORY</p><a href="#"></a></div>
+                <div class="guide3 guide_btn"><p>BEST</p><a href="#"></a></div>
+                <div class="guide4 guide_btn"><p>EQUIPMENT</p><a href="#"></a></div>
+                <div class="guide5 guide_btn"><p>REVIEW</p><a href="#"></a></div>
+                <div class="guide6 guide_btn"><p>EVENT</p><a href="#"></a></div>
+                <div class="guide7 guide_btn"><p>LOCATION</p><a href="#"></a></div>
+            </div>
+        </nav>
+        <div class="quick_menu">
+            <div class="quick_btn_aria">QUICK MENU</div>
+            <div class="quick_menu_aria">
+                <a href="#"><img src="./images/index/quick_instar.png" alt=""><span>인스타그램</span></a>
+                <a href="#"><img src="./images/index/quick_youtube.png" alt=""><span>유튜브</span></a>
+                <a href="#"><img src="./images/index/quick_qna.png" alt=""><span>빠른상담</span></a>
+                <a href="#"><img src="./images/index/quick_kakao.png" alt=""><span>카톡상담</span></a>
+            </div>
+        </div>
+        <div class="swiper wrap">
+            <div class="swiper-wrapper">
+                <!-- 메인배너 시작 -->
+                <div class="swiper-slide vertical_1">
+                    <div class="swiper mainBnr">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1_bg">
+                                <div class="bnr_text common_text1">
+                                    <p class="top_text">자연스럽고 즉각적인 효과</p>
+                                    <h2>LIFTING<span> | 리프팅</span></h2>
+                                    <div class="btm_text">
+                                        <span>소중한 여러분의 피부에 맞춘 리프팅 시술을<br>장비 이해도가 높은 숙련된 의사가 직접 진행합니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2_bg">
+                                <div class="bnr_text common_text2">
+                                    <p class="top_text">빈틈없이 탄력을 올리는</p>
+                                    <h2>OLIGIO<span> | 올리지오</span></h2>
+                                    <div class="btm_text">
+                                        <span>강하면서도 부드러운 고주파 리프팅으로<br>탄력개선과 함께 콜라겐 재생, 피부결 개선까지 가능합니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3_bg">
+                                <div class="bnr_text common_text3">
+                                    <p class="top_text">쿨링시스템으로 통증 최소화</p>
+                                    <h2>APOGEE ELITE +<span> | 아포지 엘리트 플러스</span></h2>
+                                    <div class="btm_text">
+                                        <span>공중타격방식으로 피부에 직접적인 접촉을 하지 않아<br>보다 더 위생적인 관리가 가능합니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide4_bg">
+                                <div class="bnr_text common_text4">
+                                    <p class="top_text">피부속부터 재생되는 느낌</p>
+                                    <h2>REJURAN<span> | 리쥬란</span></h2>
+                                    <div class="btm_text">
+                                        <span>건조하고 푸석푸석한 피부에 필요한 양만큼<br>스킨부스터를 주입해 피부 나이를 다시 되돌려줍니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide5_bg">
+                                <div class="bnr_text common_text5">
+                                    <p class="top_text">탄탄하면서도 슬림한 바디라인은</p>
+                                    <h2>ULFIT<span> | 울핏</span></h2>
+                                    <div class="btm_text">
+                                        <span>비침습적 방식으로 통증이 적은 초음파 레이저를 통해<br>보기 싫은 군살 파괴와 함께 바디라인 정리까지 경험해보세요.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide6_bg">
+                                <div class="bnr_text common_text6">
+                                    <p class="top_text">자연스럽고 즉각적인 효과</p>
+                                    <h2>LIFTING<span> | 리프팅</span></h2>
+                                    <div class="btm_text">
+                                        <span>소중한 여러분의 피부에 맞춘 리프팅 시술을<br>장비 이해도가 높은 숙련된 의사가 직접 진행합니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar bnr_scroll"></div>
+                    </div>
+                </div>
+                <!-- 메인배너 종료 -->
+                <!-- 시술 선택 설명 영역 시작 -->
+                <div class="swiper-slide vertical_2">
+                    <div class="select_menu_aria">
+                        <div class="left_contents">
+                            <div class="left_menu">
+                                <a href="#" class="active">보톡스/윤곽주사</a>
+                                <a href="#">리프팅</a>
+                                <a href="#">스킨부스터</a>
+                                <a href="#">기미/색소</a>
+                                <a href="#">스킨케어</a>
+                                <a href="#">체형관리</a>
+                                <a href="#">제모</a>
+                            </div>
+                            <div class="right_border">
+                                <ul class="right_text select_001">
+                                    <li><img src="./images/index/botox_text.png" alt=""></li>
+                                    <li><em>특수부위</em></li>
+                                    <li><h2>보톡스</h2></li>
+                                    <li><p>시술주기<br>
+                                        침샘/측두근 : 3~6개월 주기로 시술을 권장합니다.<br>
+                                        광대/팔자/입꼬리/입술주름 : 3개월 주기로 시술을 권장합니다.</p></li>
+                                    <li><a href="#" class="reserve_btn">예약하기</a></li>
+                                </ul>
+                                <ul class="right_text select_002">
+                                    <li><img src="./images/index/Lifting_text.png" alt=""></li>
+                                    <li><em>플로리스</em></li>
+                                    <li><h2>리프팅</h2></li>
+                                    <li><p>시술주기<br>
+                                        2주간격으로 5회 이상 시술을 권장합니다.<br>
+                                        피부표면의 손상없이 근막층에 에너지를 집속시켜 리프팅효과증대</p></li>
+                                    <li><a href="#" class="reserve_btn">예약하기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right_contents">
+                            <img id="selectImg" src="./images/index/botox_bg_001.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 시술 선택 설명 영역 종료 -->
+                <!-- best 영역 시작 -->
+                <div class="swiper-slide vertical_3">
+                    <div class="best_aria">
+                        <div class="swiper best_bg">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide best1"><img src="./images/index/best_001.png" alt=""></div>
+                                <div class="swiper-slide best2">
+                                    <img src="./images/index/best_002.png" alt="">
+                                </div>
+                                <div class="swiper-slide best2"><img src="images/index/best_003.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="right_border">
+                            <ul class="right_text best_text_001">
+                                <li><img src="./images/index/best_Clinic_text.png" alt=""></li>
+                                <li><em>기미/미백/홍조</em></li>
+                                <li><h2>피코플러스 토닝 </h2></li>
+                                <li><p>강력한 진피성 색소 개선<br>
+                                    맑고 환한 피부를 원한다면</p></li>
+                                <li><a href="#" class="reserve_btn">예약하기</a></li>
+                            </ul>
+                            <ul class="right_text best_text_002">
+                                <li><img src="./images/index/best_Clinic_text.png" alt=""></li>
+                                <li><em>바디/체형관리</em></li>
+                                <li><h2>울핏(바디슈링크)</h2></li>
+                                <li><p>고출력 HIFU를 통해 지방분해부터<br>
+                                    탄력개선 효과까지</p></li>
+                                <li><a href="#" class="reserve_btn">예약하기</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- best 영역 종료 -->
+                <!-- Equipment 시작 -->
+                <div class="swiper-slide vertical_4">
+                    <div class="equip_aria">
+                        <ul class="top_container">
+                            <li class="text_img"><img src="./images/index/equipment_text.png" alt=""></li>
+                            <li><h3>타임클리닉 장비 소개</h3></li>
+                            <li class="select_menu">
+                                <a href="#" class="active">안티에이징</a>
+                                <a href="#">점,모공,흉터</a>
+                                <a href="#">색소레이저</a>
+                                <a href="#">제모,탈모</a>
+                                <a href="#">여드름,홍조</a>
+                                <a href="#">색소</a>
+                                <a href="#">피부질환</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper equip_container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide equip_item1">
+                                <div class="equip_img"><img src="./images/index/equipment_001.png" alt=""></div>
+                                <div class="equip_text_ani">
+                                    <h4>소프라노 티타늄</h4>
+                                    <div class="tag_box">
+                                        <em>#리프팅</em>
+                                        <em>#브라이트닝</em>
+                                        <em>#타이트닝</em>
+                                    </div>
+                                    <p>소프라노 티타늄 장비는 세계 최초<br>
+                                        핸드피스로 1초에 150개의 레이저 빔을 조사해<br>
+                                        다운 타임없이 피부와 직접 접촉하여 즉각적인 효과를 보여줍니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide equip_item2">
+                                <div class="equip_img"><img src="./images/index/equipment_002.png" alt=""></div>
+                                <div class="equip_text_ani">
+                                    <h4>소프라노 티타늄</h4>
+                                    <div class="tag_box">
+                                        <em>#리프팅</em>
+                                        <em>#브라이트닝</em>
+                                        <em>#타이트닝</em>
+                                    </div>
+                                    <p>소프라노 티타늄 장비는 세계 최초<br>
+                                        핸드피스로 1초에 150개의 레이저 빔을 조사해<br>
+                                        다운 타임없이 피부와 직접 접촉하여 즉각적인 효과를 보여줍니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide equip_item3">
+                                <div class="equip_img"><img src="./images/index/equipment_003.png" alt=""></div>
+                                <div class="equip_text_ani">
+                                    <h4>소프라노 티타늄</h4>
+                                    <div class="tag_box">
+                                        <em>#리프팅</em>
+                                        <em>#브라이트닝</em>
+                                        <em>#타이트닝</em>
+                                    </div>
+                                    <p>소프라노 티타늄 장비는 세계 최초<br>
+                                        핸드피스로 1초에 150개의 레이저 빔을 조사해<br>
+                                        다운 타임없이 피부와 직접 접촉하여 즉각적인 효과를 보여줍니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide equip_item1">
+                                <div class="equip_img"><img src="./images/index/equipment_001.png" alt=""></div>
+                                <div class="equip_text_ani">
+                                    <h4>소프라노 티타늄</h4>
+                                    <div class="tag_box">
+                                        <em>#리프팅</em>
+                                        <em>#브라이트닝</em>
+                                        <em>#타이트닝</em>
+                                    </div>
+                                    <p>소프라노 티타늄 장비는 세계 최초<br>
+                                        핸드피스로 1초에 150개의 레이저 빔을 조사해<br>
+                                        다운 타임없이 피부와 직접 접촉하여 즉각적인 효과를 보여줍니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide equip_item2">
+                                <div class="equip_img"><img src="./images/index/equipment_002.png" alt=""></div>
+                                <div class="equip_text_ani">
+                                    <h4>소프라노 티타늄</h4>
+                                    <div class="tag_box">
+                                        <em>#리프팅</em>
+                                        <em>#브라이트닝</em>
+                                        <em>#타이트닝</em>
+                                    </div>
+                                    <p>소프라노 티타늄 장비는 세계 최초<br>
+                                        핸드피스로 1초에 150개의 레이저 빔을 조사해<br>
+                                        다운 타임없이 피부와 직접 접촉하여 즉각적인 효과를 보여줍니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide equip_item3">
+                                <div class="equip_img"><img src="./images/index/equipment_003.png" alt=""></div>
+                                <div class="equip_text_ani">
+                                    <h4>소프라노 티타늄</h4>
+                                    <div class="tag_box">
+                                        <em>#리프팅</em>
+                                        <em>#브라이트닝</em>
+                                        <em>#타이트닝</em>
+                                    </div>
+                                    <p>소프라노 티타늄 장비는 세계 최초<br>
+                                        핸드피스로 1초에 150개의 레이저 빔을 조사해<br>
+                                        다운 타임없이 피부와 직접 접촉하여 즉각적인 효과를 보여줍니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Equipment 종료-->
+                <div class="swiper-slide vertical_5">
+                    <div class="review_container">
+                        <div class="review_aria">
+                            <div class="left_border">
+                                <ul class="left_text">
+                                    <li><img src="./images/index/review_text_text.png" alt=""></li>
+                                    <li><em>당신의 피부만을 위한 맞춤치료</em></li>
+                                    <li><h2>베스트 리뷰</h2></li>
+                                    <li><p>좋은 의사를 만나는 것이 성공의 핵심입니다.</p></li>
+                                    <li><a href="#" class="reserve_btn">리뷰 더보기</a></li>
+                                </ul>
+                            </div>
+                            <div class="right_doctor_aria">
+                                <div class="doctor doctor1">
+                                    <div class="doctor_img"><img src="./images/index/review_001.png" alt=""></div>
+                                    <ul class="text_menu_ani">
+                                        <li class="top_text"><em>천보연 원장님 리뷰</em><span>송인서 환자</span></li>
+                                        <li><p>피부과는 무척 많은데, 믿고 찾을 수 있는 병원을 만나는 것은 쉽지않았습니다. 여러 병원을 다니면서 실패했지만, 타임 병원에 방문하고 새로운 경험을 했습니다. 저는 항상 마취가 잘 안되는 편이였는데,천보연 원장님의 마취분야에 대한 탁월함으로 통증없이 편안하게 치료받았습니다. </p></li>
+                                    </ul>
+                                </div>
+                                <div class="doctor doctor2">
+                                    <div class="doctor_img"><img src="./images/index/review_002.png" alt=""></div>
+                                    <ul class="text_menu_ani">
+                                        <li class="top_text"><em>천보연 원장님 리뷰</em><span>송인서 환자</span></li>
+                                        <li><p>피부과는 무척 많은데, 믿고 찾을 수 있는 병원을 만나는 것은 쉽지않았습니다. 여러 병원을 다니면서 실패했지만, 타임 병원에 방문하고 새로운 경험을 했습니다. 저는 항상 마취가 잘 안되는 편이였는데,천보연 원장님의 마취분야에 대한 탁월함으로 통증없이 편안하게 치료받았습니다. </p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide vertical_6">
+                    <div class="event_aria">
+                        <div class="event_inner">
+                            <h3>EVENT</h3>
+                            <div class="swiper event_contents">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide event1">
+                                        <div class="event_img"><img src="./images/index/event_001.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide event2">
+                                        <div class="event_img"><img src="./images/index/event_002.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide event3">
+                                        <div class="event_img"><img src="./images/index/event_003.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide event4">
+                                        <div class="event_img"><img src="./images/index/event_004.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide event1">
+                                        <div class="event_img"><img src="./images/index/event_001.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide event2">
+                                        <div class="event_img"><img src="./images/index/event_002.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide event3">
+                                        <div class="event_img"><img src="./images/index/event_003.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide event4">
+                                        <div class="event_img"><img src="./images/index/event_004.png" alt=""></div>
+                                        <div class="event_title">
+                                            <h4>FIRST VISIT EVENT</h4>
+                                            <p>첫방문 이벤트</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="event_btn">자세히 보기</a>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide vertical_7">
+                    <div class="map_footer">
+                        <div class="map_aria">
+                            <div class="map_img"><img src="./images/index/map.png" alt=""></div>
+                            <div class="location_aria">
+                                <div class="location_container">
+                                    <ul class="location">
+                                        <li><h3>오시는길</h3></li>
+                                        <li class="address"><p>인천광역시 부평구 경원대로 1405 (부평동 159-40) 타임피부과빌딩 2층<br>
+                                            1호선 부평역 12번출구 50미터 앞</p></li>
+                                        <li><span>전화상담/예약</span><em>032.518.0005</em></li>
+                                    </ul>
+                                    <ul class="time_aria">
+                                        <li class="time_title"><h4>TIME<br><p class="time_sub_text">진료시간 안내</p></h4></li>
+                                        <li class="item_info">
+                                            <p><span>평일</span><em>오전 10:00 ~ 오후 08:00</em></p>
+                                            <p><span>점심시간</span><em>오후 01:00 ~ 오후 02:00</em></p>
+                                            <p><span>토요일</span><em>오전 09:30 ~ 오후 04:00</em></p> 
+                                            <p><em>※ 토요일은 점심시간 없이 진행합니다.</em></p>
+                                            <p><em>※ 일요일, 정규 공휴일 : 휴진</em></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <footer>
+                            <div class="inner_footer">
+                                <div class="top_menu">
+                                    <a href="#">병원소개</a>
+                                    <a href="#">찾아오시는 길</a>
+                                    <a href="#">개인정보처리방침</a>
+                                    <a href="#">이용약관</a>
+                                    <a href="#">이벤트</a>
+                                    <a href="#">공지사항</a>
+                                </div>
+                            </div>
+                            <div class="btm_contents">
+                                <div class="left_container">
+                                    <h3>타임의원</h3>
+                                    <address>
+                                        사업장 : 21395) 인천광역시 부평구 경원대로 1405 (부평동 159-40) 타임피부과빌딩 2층 | 대표자 : 천보연, 권혁주<br>
+                                        사업자등록번호 415-11-62107 | 전화번호 : 032-518-0005 | FAX : 032-518-0244 | E-mail : medist78@naver.com
+                                        <br><span>copyright © 부평타임의원 피부과. all rights reserved.</span>
+                                    </address>
+                                </div>
+                                <div class="right_container">
+                                    <a href="#"><img src="./images/index/kakao.png" alt=""></a>
+                                    <a href="#"><img src="./images/index/face_book.png" alt=""></a>
+                                    <a href="#"><img src="./images/index/instar.png" alt=""></a>
+                                    <a href="#"><img src="./images/index/naver_blog.png" alt=""></a>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </main>
+    <!-- 메인 종료 -->
+        
+</body>
+</html>

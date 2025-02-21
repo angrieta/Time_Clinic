@@ -1,0 +1,141 @@
+/* quick_menu 시작 */
+.quick_menu{
+    position: absolute; right: 0; bottom: 30px; z-index: 700;
+    transform: translateX(90px);
+}
+/* .quick_menu:hover{
+    animation: quick_menu 0.5s both
+} */
+
+.quick_menu .quick_btn_aria{
+    width: 100px; height: 30px; font-size: 0.8125rem;
+    background-color: #BC716E; color: #fff; text-align: center; align-content: center;
+    transform: rotate(-90deg); border-radius: 15px 15px 0 0;
+    position: absolute; right:55px; bottom: 48%;
+}
+.quick_menu .quick_menu_aria{
+    display: flex; flex-flow: column nowrap;
+    padding: 10px 10px;
+    background-color: #F7F4F1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top: 1px solid #BC716E;
+    border-left: 1px solid #BC716E;
+    border-bottom: 1px solid #BC716E;
+}
+.quick_menu .quick_menu_aria a{
+    display: flex; flex-flow: column nowrap;
+    width: 70px; height: 70px;
+    text-align: center; justify-content: center;
+    justify-items: center; margin-bottom: 10px; 
+    border-bottom:1px solid #EFA8A5 ;
+}
+.quick_menu .quick_menu_aria a:hover > *{
+    animation: quickItemScale 0.5s forwards;
+}
+.quick_menu .quick_menu_aria a img{width: 22px; margin: 0 auto;}
+.quick_menu .quick_menu_aria a:last-child img{width: 24px; margin: 0 auto;}
+.quick_menu .quick_menu_aria a span{
+    font-size:0.875rem;
+    font-weight: 500;
+    margin-top: 7px;
+}
+/* quick_menu 종료 */
+
+/* 기능 */
+.vertical_2 .left_contents .select_001{
+
+}
+.vertical_2 .left_contents .select_002{
+    display: none;
+}
+.vertical_2 .left_contents{
+    transform: translateX(-1000px);
+    opacity: 0;
+}
+.vertical_3 .swiper-slide{
+    transform: translateY(600px);
+    opacity: 0;
+}
+.vertical_3 .right_text{
+    transform: translateX(1000px);
+    opacity: 0;
+}
+.vertical_4 .top_container{
+    transform: translateY(100px);
+    opacity: 0;
+}
+.equip_item1, .equip_item2, .equip_item3{
+    opacity: 0;
+}
+.right_doctor_aria .doctor1{
+    transform: translateX(1000px);
+    opacity: 0;
+}
+.right_doctor_aria .doctor2{
+    transform: translateX(1000px);
+    opacity: 0;
+}
+.event_inner h3{
+    scale: 0.3; opacity: 0;
+}
+.map_footer .map_aria .map_img {
+    opacity: 0; transform: translateY(200px);
+    width: 100%;
+}
+.map_footer .map_aria .location_container {
+    width: 65%; opacity: 0; 
+    transform: translateX(500px);
+    margin: 0 auto;
+}
+
+.swiper-slide-active{
+    
+}
+
+/* 키프레임 */
+@keyframes selectTransfer {
+    0% {transform: translateY(90px);}
+    100% {transform: translateY(0px);}
+}
+@keyframes quick_menu {
+    0% {transform: translateX(90px);}
+    100% {transform: translateX(0);}
+}
+@keyframes quick_menu1 {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(90px);}
+}
+@keyframes quickBtnOver {
+    0% {background-color: #BC716E; color: #F7F4F1; border-right:1px solid #BC716E;}
+    100% {
+        background-color: #F7F4F1; color: #BC716E;
+        border-bottom:1px solid #F7F4F1 ; border-top: 1px solid #BC716E; border-right: 1px solid #BC716E; border-left: 1px solid #BC716E;
+    }
+}
+@keyframes quickBtnLeave {
+    0% {background-color: #F7F4F1; color: #BC716E; border-right:1px solid #F7F4F1;}
+    100% {background-color: #BC716E; color: #F7F4F1; border-right:1px solid #BC716E;}
+}
+@keyframes quickItemScale {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.2);}
+}
+@keyframes quickItemScale {
+    0% {transform: scale(0.7);}
+    100% {transform: scale(1);}
+}
+@keyframes quick_guide_btn {
+    0% {background-color: #fff; opacity: 0;}
+    100% {background-color: #222; opacity: 1;}
+}
+
+
+@keyframes on {
+    0% {transform: translateX(150px); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+@keyframes off {
+    0% {transform: translateX(0px); opacity: 0} 
+    100% {transform: translateX(150px); opacity: 0}
+}
